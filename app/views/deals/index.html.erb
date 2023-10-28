@@ -1,74 +1,16 @@
-<div class="row align-items-center">
-  <div>
-    <div class="bg-white shadow-sm overflow-hidden rounded">
-      <div class="p-4 text-center bg-dark-active text-white">
-        <a class="avatar avatar60 ml-auto mr-auto bg-gradient-primary text-white rounded-circle">
-          <i class="icon-Paper-Plane"></i>
-        </a>
-        <h5 class="text-center h5 pt-10 mb-0 text-white">Welcome!</h5>
-      </div>
-      <div class="p-3 pt-30 pb-30">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="alert alert-danger" role="alert">
-              <div id="flash_alert">You need to sign in or sign up before continuing.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="authform">
-          <form class="new_user" id="new_user" role="form" action="/users/pre_otp" accept-charset="UTF-8" data-remote="true" method="post" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-            <div class="input-icon-group">
-              <div class="d-flex flex flex-row">
-                <label class="flex d-flex mr-auto" for="email">Email</label>
-              </div>
-              <div class="input-icon-append">
-                <i class="fa fa-envelope"></i>
-                <input autofocus="autofocus" placeholder="Email Address" id="user-email" class="form-control" type="email" value="" name="user[email]" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-              </div>
-            </div>
-            <input type="submit" name="commit" value="Next" class="btn btn-primary btn-block btn-lg" data-disable-with="Next" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-          </form>
-          <form class="d-none" id="step-2" action="/users/sign_in" accept-charset="UTF-8" method="post" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-            <input type="hidden" name="authenticity_token" value="o9qo4J6QjNKFSf_0k_vgPlx_c11neYAlmo4cn7D1vamNm4Es6mKndhLu2P74wwZeooQul2EMzoh2RlPhxPCh7A" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-            <h5 class="text-center h5 pt-10 mb-0">Sign In</h5>
-            <div class="input-icon-group">
-              <div class="d-flex flex flex-row">
-                <label class="flex d-flex mr-auto" for="email">Email</label>
-              </div>
-              <div class="input-icon-append">
-                <i class="fa fa-envelope"></i>
-                <input autofocus="autofocus" class="form-control" placeholder="Email address" type="text" value="" name="user[email]" id="user_email" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-              </div>
-            </div>
-            <div class="input-icon-group">
-              <div class="d-flex flex flex-row">
-                <label class="flex d-flex mr-auto" for="pass">Password</label>
-                <div class="flex d-flex ml-auto justify-content-end">
-                  <a class="text-primary fs12" href="/users/password/new">Forgot password?</a>
-                </div>
-              </div>
-              <div class="input-icon-append">
-                <i class="fa fa-lock"></i>
-                <input class="form-control" id="pass" placeholder="Password" type="password" name="user[password]" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-              </div>
-            </div>
-            <div class="form-group">
-              <input autocomplete="1698416686868" placeholder="2FA Code" class="form-control d-none" type="text" name="user[otp_attempt]" id="user_otp_attempt" spellcheck="1698416686868" autocorrect="1698416686868">
-            </div>
-            <div class="customUi-checkbox pb-2">
-              <input name="user[remember_me]" type="hidden" value="0" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-              <input id="check-remember" type="checkbox" value="1" name="user[remember_me]" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-              <label for="check-remember">
-                <span class="label-checkbox"></span>
-                <span class="label-helper">Remember Me</span>
-              </label>
-            </div>
-            <input type="submit" name="commit" value="Sign in" class="btn btn-primary btn-lg" data-disable-with="Sign in" autocomplete="1698416686868" spellcheck="1698416686868" autocorrect="1698416686868">
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Doxnative</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Deals</li>
+  </ol>
+</nav>
+<ul class="list-group">
+  <li class="list-group-item active" aria-current="true">Native Deals</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">DoxNative</a>
+</nav>
